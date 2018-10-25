@@ -1,0 +1,66 @@
+{
+  "name": "@lenic/redux-manager",
+  "description": "Dynamic redux manager.",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "directories": {
+    "example": "example",
+    "lib": "lib"
+  },
+  "scripts": {
+    "build": "babel src -d lib --source-maps",
+    "start": "webpack-dev-server --config example/config/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lenic/redux-manager.git"
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "module",
+    "dynamic"
+  ],
+  "author": {
+    "name": "Lenic Rayleigh",
+    "email": "lenic@live.cn"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Lenic/redux-manager/issues"
+  },
+  "homepage": "https://github.com/Lenic/redux-manager#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/plugin-proposal-decorators": "^7.1.2",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+    "@babel/plugin-transform-runtime": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/runtime": "^7.1.2",
+    "@lenic/react-auth-route": "^1.0.3",
+    "babel-loader": "^8.0.4",
+    "html-webpack-plugin": "^3.2.0",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
+    "react-redux": "^5.0.7",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0",
+    "underscore": "^1.8.3",
+    "webpack": "^4.23.0",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  },
+  "peerDependencies": {
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0",
+    "underscore": "^1.8.3"
+  }
+}
