@@ -28,7 +28,7 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx'],
     alias: {
-      '@lenic/redux-manager': getPath('src'),
+      '@lenic/redux-manager': getPath('lib'),
     },
   },
   plugins: [

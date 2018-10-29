@@ -1,5 +1,4 @@
 import React from 'react';
-import _ from 'underscore';
 import thunk from 'redux-thunk';
 import { connect as originalConnect } from 'react-redux';
 import {
@@ -16,7 +15,7 @@ export const injectReducer = (key, reducer) => {
     throw new Error('The store must be initialized first.');
   }
 
-  if (_.has(rootStore.asyncReducers, key)) {
+  if (rootStore.asyncReducers.hasOwnProperty(key)) {
     return;
   }
 

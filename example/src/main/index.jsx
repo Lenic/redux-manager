@@ -28,14 +28,14 @@ class Main extends React.PureComponent {
         </div>
         <hr />
         <Switch>
-          <Route path="/roles" render={props => (
+          <Route key="roles" path="/roles" render={props => (
             <AsyncComponent
               {...props}
               loading={() => <div>Roles Loading...</div>}
               component={() => import('./roles').then(v => new Promise(r => setTimeout(() => r(v), 2000)))}
             />
           )} />
-          <Route path="/users" render={props => (
+          <Route key="users" path="/users" render={props => (
             <AsyncComponent
               {...props}
               loading={() => <div>Users Loading...</div>}
