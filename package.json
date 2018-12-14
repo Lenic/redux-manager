@@ -1,7 +1,7 @@
 {
   "name": "@lenic/redux-manager",
   "description": "Dynamic redux manager.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "lib/index.js",
   "directories": {
     "example": "example",
